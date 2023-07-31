@@ -1,24 +1,24 @@
-title: Urban Template
-url: "https://teal-worm.cloudvent.net"
+title: DOAble LLC
+url: "https://doablellc.com"
 baseurl:
 google_analytics_key:
 google_maps_javascript_api_key:
 disqus_shortname:
 
 # Default description in social shares for the jekyll-seo-tag gem
-description: Jekyll template with example content for a web agency.
+description: DOAble llc website.
 
 # Author details for the jekyll-seo-tag gem
-author:
-  name:
-  email:
-  twitter: # twitter username without the @ symbol
+author: Psychobit
+  name: David Anthony
+  email: doablellc@gmail.com
+  twitter: tech_eg0
 
 # Social details for the jekyll-seo-tag gem
-social:
-  name: Urban Template
+social: 
+  name: 
   links:
-    - https://github.com/CloudCannon/urban-jekyll-template
+    - 
 
 timezone: Etc/UTC
 
