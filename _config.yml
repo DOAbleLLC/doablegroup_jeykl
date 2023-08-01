@@ -1,18 +1,18 @@
-title: DOAble LLC
-url: "https://doablellc.com"
-baseurl:
+title: Doable Group
+url: "https://doablegroup.com"
+baseurl: ""
 google_analytics_key:
 google_maps_javascript_api_key:
 disqus_shortname:
 
 # Default description in social shares for the jekyll-seo-tag gem
-description: DOAble llc website.
+description: Doable group | Tech and media company.
 
 # Author details for the jekyll-seo-tag gem
 author: Psychobit
-  name: David Anthony
-  email: doablellc@gmail.com
-  twitter: tech_eg0
+name: David Anthony
+email: contactus@doablegroup.com
+twitter: tech_eg0
 
 # Social details for the jekyll-seo-tag gem
 social: 
