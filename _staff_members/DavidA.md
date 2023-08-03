@@ -1,5 +1,5 @@
 ---
 name: David Anthony
-position: Tech Lead
+position: Tech/Design Lead
 image_path: "/David.jpg"
 ---
