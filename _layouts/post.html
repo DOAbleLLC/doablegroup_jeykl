@@ -2,7 +2,7 @@
 layout: page
 ---
 <section class="diagonal">
-	<div class="Services-post text-container">
+	<div class="services-post text-container">
 		{% include post-title.html post=page %}
 		<div class="post-content">
 			{{ content }}
@@ -28,7 +28,7 @@ layout: page
 <section class="diagonal alternate">
 	<div class="text-container">
 		<h2>Next post</h2>
-		<div class="Services-post">
+		<div class="services-post">
 			{% if page.next %}
 				{% include post-summary.html post=page.next %}
 			{% elsif page.previous %}
