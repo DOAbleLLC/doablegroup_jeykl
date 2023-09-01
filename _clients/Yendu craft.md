@@ -2,7 +2,7 @@
 name: Yendu craft website design
 subtitle: Website design and maintenance
 external_url: 
-image_path: /images/clients/yendu.jpg
+image_path: /images/clients/Yendu.jpg
 ---
 
 Welcome to the Doable Group design portfolio, where creative innovation meets tangible results. We are a dynamic design agency dedicated to turning ideas into reality, enhancing brand identities, and crafting compelling visual experiences. Our passion lies in transforming concepts into visually captivating solutions that leave a lasting impact. Dive into our portfolio to witness the power of design that's not only aesthetically pleasing but also strategically effective.
