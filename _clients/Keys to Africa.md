@@ -1,5 +1,6 @@
 ---
 name: Keys to Africa
+title: Keys to Africa
 subtitle: Non profit logo design
 external_url: https://www.behance.net/gallery/178815513/Logo-design-African-foundation
 image_path: /images/clients/K2A.jpg

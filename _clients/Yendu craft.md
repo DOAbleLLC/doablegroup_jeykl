@@ -1,5 +1,6 @@
 ---
 name: Yendu Craft website design
+title: Yendu Craft
 subtitle: Website design and maintenance
 external_url: 
 image_path: /images/clients/Yendu.jpg
