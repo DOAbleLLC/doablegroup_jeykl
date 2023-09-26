@@ -1,16 +1,17 @@
 ---
-title: About
-heading: Our team
+title: Our Team
+heading: Our Team
 subtitle: Meet our awesome team.
 ---
 
 <section class="diagonal patterned">
 	<div class="container">
 	    <p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_staff_members/" class="btn"><strong>&#9998;</strong>Manage Staff members</a></p>
-		<ul class="image-grid">
+		<ul class="r-image-grid">
 			{% for member in site.staff_members %}
 				<li>{% include staff-member.html member=member %}</li>
 			{% endfor %}
 		</ul>
 	</div>
 </section>
+
