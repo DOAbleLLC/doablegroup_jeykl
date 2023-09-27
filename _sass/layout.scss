@@ -113,22 +113,22 @@ section {
 	padding: 13px 38px;
 	border-radius: 3px;
 	display: inline-block;
-	color: $brand-color;
+	color: #ffffff;
 	text-decoration: none;
 	cursor: pointer;
 	margin: 20px 0 0 0;
 	border: 1px solid #fff;
-	background: #fff;
+	background: none;
 	text-decoration: none !important;
 
 	&:hover {
-		background: rgba(255, 255, 255, 0.3);
-		color: #fff;
+		background: $secondary-brand-color;
+		color: #7300ff;
 	}
 
 	&:active {
 		opacity: 1;
-		background: rgba(255, 255, 255, 0.1);
+		background: #ffffff1a;
 		color: #fff;
 		transform: translateY(1px);
 	}
