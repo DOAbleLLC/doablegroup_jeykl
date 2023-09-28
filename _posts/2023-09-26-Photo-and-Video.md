@@ -1,14 +1,14 @@
 ---
-title: Photography and video
+title: Photography and Video
 categories:
-  - HODstudioz
+  - Photo and Video
 author_staff_member: David Anthony
 show_comments: "false"
 ---
 
 With over 8 years of photo and video experience and leveraging modern technology, we have what it takes to capture and bring your special moments to life. 
 
-![Cars](https://unsplash.it/960/600?image=133)
+![Cars](https://unsplash.it/960/600?image=133) 
 
 # Event Photography
 
