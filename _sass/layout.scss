@@ -1,0 +1,403 @@
+body {
+    font-family: "Cantarell", Helvetica, sans-serif;
+}
+
+.container,
+.text-container {
+	margin: 0 auto;
+	position: relative;
+	padding: 20 20px;
+}
+
+.text-container {
+	max-width: 1200px;
+}
+
+.container {
+	max-width: 1300px;
+}
+
+header {
+	color: #fff;
+	padding: 10px 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 20;
+	width: 100%;
+
+	a {
+		color: #0000;
+		text-decoration: none;
+		z-index: 1;
+		position: relative;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	.company-name {
+		font-size: 1.7em;
+	}
+}
+
+.content {
+	background: #fff;
+	padding: 1px 0 0 0;
+	position: relative;
+	max-width: 1200px;
+}
+
+.screenshot{
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	box-shadow: 0 1px 0 #ccc,0 1px 1px #eee;
+	border-radius: 2px;
+	padding: 20px 0 0;
+	background: url($screenshot-buttons) 4px 4px no-repeat #DDD;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
+}
+
+section {
+	padding: 40px 0;
+	background: #fff;
+	margin-top: -2px;
+
+	&.diagonal {
+		-webkit-transform: skewY(-$section-rotation);
+		-moz-transform: skewY(-$section-rotation);
+		-ms-transform: skewY(-$section-rotation);
+		transform: skewY(-$section-rotation);
+
+		> div {
+			-webkit-transform: skewY($section-rotation);
+			-moz-transform: skewY($section-rotation);
+			-ms-transform: skewY($section-rotation);
+			transform: skewY($section-rotation);
+		}
+	}
+
+	&.hero {
+		color: #ffffff;
+		background: url('/video-poster.jpg'); /* Fallback image */
+		background-size: cover;
+		position: relative;
+		text-align: left;
+		margin-top: -80px;
+		padding-top: 250px;
+
+		&.hero::before {
+			content: "";
+			background: url('/video-poster.jpg'); /* Same image as the background */
+			background-size: cover;
+			filter: blur(5px); /* Adjust the blur intensity as needed */
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+		}
+
+		&.hero video {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			z-index: -1;
+			filter: blur(5px); 
+		}
+
+		h2, p {
+			max-width: 90%;
+			margin-left: 20px;
+		}
+
+		h2 {
+			font-size: 3.5rem;
+		}
+
+		p {
+			font-size: 1.4rem;
+			color: #fff;
+		}
+
+		a:not(.button) {
+			color: #ffffff;
+			font-style: italic;
+		}
+	}
+
+	&.alternate {
+		background: #d9d9d9;
+	//	background:url('/geometry.png');
+		
+		&,
+	p {
+		color: #0d0d0d;
+	}
+	}
+}
+
+.button {
+	padding: 13px 38px;
+	border-radius: 3px;
+	display: inline-block;
+	color: #ffffff;
+	text-decoration: none;
+	cursor: pointer;
+	margin: 20px 0 0 0;
+	border: 1px solid #fff;
+	background: none;
+	text-decoration: none !important;
+
+	&:hover {
+		background: #ffffff;
+		color: #7300ff;
+	}
+
+	&:active {
+		opacity: 1;
+		background: #ffffff1a;
+		color: #fff;
+		transform: translateY(1px);
+	}
+}
+
+.halves {
+	display: flex;
+	flex-flow: wrap;
+	align-items: center;
+
+	> div {
+		flex: 1 0 100%;
+	}
+
+	@media #{$mid-point} {
+		> div {
+			flex: 1;
+		}
+
+		> div + div {
+			padding-left: 20px;
+			margin: 0;
+		}
+	}
+}
+
+.aligned-top {
+	align-items: flex-start;
+}
+
+
+.image-grid {
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-flow: wrap;
+	text-align: center;
+	margin: 30px;
+	
+
+	li {
+		padding: 0;
+		box-sizing: border-box;
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+		margin: 20px;
+		border-radius: 5px;
+		text-align: left;
+		border: 1px solid $secondary-brand-color;
+		line-height: 0;
+
+		@media #{$tablet} {
+			flex: 1 1 50%;
+		}
+
+		@media #{$desktop} {
+			flex: 1 1 30%;
+		}
+
+		img {
+			min-width: 100%;
+		}
+
+		> a:hover {
+			opacity: 0.9;
+		}
+	}
+
+	.square-image {
+		height: 250px;
+		width: 250px; /* Set a fixed width to make it square */
+		position: relative;
+		margin: 0 20px;
+		overflow: hidden; /* Clip the rounded corners */
+	
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			position: absolute;
+			top: 0;
+			left: 0;
+			border-radius: 50%; /* Make the image round */
+		}
+	}
+
+
+	.details {
+		line-height: 1.2;
+		position: relative;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba(255, 255, 255, 0.4);
+		padding: 20px;
+	}
+
+	.name {
+		font-size: 1.3rem;
+		color: $brand-color;
+	}
+
+	.position {
+		margin-top: 5px;
+		color: #0d0d0d;
+	}
+
+	.filler {
+		border: 0;
+	}
+}
+
+.image-list,
+.image-list li {
+	float: left;
+	list-style: none;
+	margin: 10px;
+	padding: 0;
+	text-align: center;
+}
+
+.patterned {
+	//background: #ffffff url($pattern);
+	background: #ffffff;
+
+	&,
+	p {
+		color: #0d0d0d;
+	}
+}
+
+.r-image-grid {
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-flow: wrap;
+    text-align: center;
+    margin: 0 - 20px;
+
+    li {
+        padding: 10;
+        box-sizing: border-box;
+        width: 70%;
+        position: relative;
+        overflow: hidden;
+        margin: 110px;
+        border: 1px solid $secondary-brand-color;
+        line-height: 10;
+        border-radius: 50%; /* Make the container round */
+
+        @media #{$tablet} {
+            flex: 1 1 50%;
+        }
+
+        @media #{$desktop} {
+            flex: 1 1 30%;
+        }
+
+        img {
+            min-width: 100%;
+            border-radius: 50%; /* Make the image round */
+        }
+
+    	.details {
+		line-height: 1.2;
+		position: absolute;
+        bottom: 50%;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba(255, 255, 255, 0.6);
+		padding: 20px;
+	}
+
+	.name {
+		font-size: 1.3rem;
+		color: $brand-color;
+	}
+
+	.position {
+		margin-top: 5px;
+		color: #0d0d0d;
+	}
+
+	.filler {
+		border: 0;
+	}
+}
+
+    .round-image {
+        height: 250px; /* Set a fixed height for the round container */
+        width: 250px; /* Set a fixed width to make it square */
+        position: relative;
+        margin: 0 20px;
+        overflow: hidden; /* Clip the rounded corners */
+
+        @media #{$tablet} {
+            flex: 1 1 50%; /* Adjust flex properties for tablets */
+        }
+
+        @media #{$desktop} {
+            flex: 1 1 30%; /* Adjust flex properties for desktops */
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+
+
+.bio-popup {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 50%; /* Horizontally center the popup */
+    transform: translateX(-50%); /* Center the popup horizontally */
+    width: 70%;
+    height: 70%;
+    background: #d9d9d9;
+	color: #0d0d0d; /* Set text color to white */
+    z-index: 1;
+    overflow: auto;
+    padding: 80px;
+	line-height: 1.2; /* Reduce line height */
+	border-radius: 50%; /* Make the popup round */
+}
+
+.staff-member:hover .bio-popup {
+    display: block;
+}

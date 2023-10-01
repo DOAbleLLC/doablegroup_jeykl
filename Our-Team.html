@@ -1,0 +1,52 @@
+---
+title: Our Team
+heading: Our Team
+subtitle: At Doable Group, we are a team of experts and thought leaders, united by our unwavering dedication to helping people thrive in the digital age. Our collective passion for technology, innovation, and human-centric design fuels our mission to transform ideas into reality and create tangible results for our clients. Join us on our journey of growth and innovation as we continue to push the boundaries of what's 'Doable' in the world of digital solutions.
+---
+
+<section class="diagonal patterned">
+    <div class="container">
+        <ul class="r-image-grid">
+            {% for member in site.staff_members %}
+                <li>
+                    <div class="staff-member">
+						<div class="r-image-grid">
+							<img src="{% include relative-src.html src=member.image_path %}" alt="{{ member.name }}" />
+						</div>
+						<div class="details">
+							<div class="name">{{ member.name }}</div>
+							<div class="position">{{ member.position }}</div>
+						</div>
+						<div class="bio-popup">
+							<div class="bio-content">
+								{{ member.bio }}
+							</div>
+						</div>
+					</div>										
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+
+
+
+
+
+<script>
+	// Get all elements with the "staff-member" class
+const staffMembers = document.querySelectorAll('.staff-member');
+
+// Add click event listeners to each staff member element
+staffMembers.forEach((staffMember) => {
+    // Find the bio element within the staff member
+    const bio = staffMember.querySelector('.bio');
+
+    // Add a click event listener to the image
+    staffMember.querySelector('.r-image-grid img').addEventListener('click', () => {
+        // Toggle the visibility of the bio element
+        bio.classList.toggle('show-bio');
+    });
+});
+
+</script>

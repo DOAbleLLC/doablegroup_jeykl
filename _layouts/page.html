@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<section class="hero diagonal">
+    <video autoplay loop muted poster="/video-poster.jpg">
+        <source src="/video.mp4" type="video/mp4">
+        <!-- Add more source elements for different video formats (e.g., WebM, Ogg) if needed -->
+    </video>
+    <div class="container" {% if page.full_width %}style="max-width: 100%"{% endif %}>
+        {% if page.heading %}
+            <h2>{{ page.heading }}</h2>
+        {% elsif page.title %}
+            <h2>{{ page.title }}</h2>
+        {% endif %}
+        {% if page.subtitle %}
+            <p class="subtext">{{ page.subtitle }}</p>
+        {% endif %}
+    </div>
+</section>
+
+
+{{ content }}

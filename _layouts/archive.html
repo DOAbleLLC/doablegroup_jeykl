@@ -1,0 +1,23 @@
+---
+layout: default
+---
+{% assign services = site.pages | where: "path", "services.html" | first %}
+
+<section class="hero diagonal">
+	<div class="container">
+		{% if services.heading %}
+		<h2><a href="{{ site.baseurl }}/services/">{{ services.heading }}</a> / {{ page.title | capitalize }}</h2>
+		{% endif %}
+		{% if services.subtitle %}
+			<p class="subtext">{{ services.subtitle }}</p>
+		{% endif %}
+	</div>
+</section>
+
+<section class="diagonal">
+	<div class="text-container">
+		<ul class="services-posts">
+			{% include list-posts.html posts=page.posts %}
+		</ul>
+	</div>
+</section>
