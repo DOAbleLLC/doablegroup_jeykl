@@ -5,10 +5,9 @@ categories:
 author_staff_member: David Anthony
 show_comments: "false"
 ---
+ 
+![Advertisingbanner](/Advertising-banners.jpeg) 
 
-With over 8 years of experience and leveraging modern technology, we have what it takes to capture and bring your ideas to life. 
-
-![Cars](https://unsplash.it/960/600?image=133) 
 
 # Social Media Advertising
 

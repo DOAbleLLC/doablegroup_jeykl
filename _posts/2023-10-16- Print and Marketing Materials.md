@@ -4,11 +4,9 @@ categories:
   - Graphic Design
 author_staff_member: David Anthony
 show_comments: "false"
----
+--- 
 
-With over 8 years of experience and leveraging modern technology, we have what it takes to capture and bring your ideas to life. 
-
-![Cars](https://unsplash.it/960/600?image=133) 
+![Broture sample](/business-lincolnshire-branded-headphones-visual-print-and-design.jpg)
 
 # Print Design
 

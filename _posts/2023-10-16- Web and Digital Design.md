@@ -6,9 +6,7 @@ author_staff_member: David Anthony
 show_comments: "false"
 ---
 
-With over 8 years of experience and leveraging modern technology, we have what it takes to capture and bring your ideas to life. 
-
-![Cars](https://unsplash.it/960/600?image=133) 
+![websitelandingpage](/Web and Digital Design.jpeg) 
 
 # Web Design
 
