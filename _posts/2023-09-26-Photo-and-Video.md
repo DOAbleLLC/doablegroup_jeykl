@@ -16,7 +16,7 @@ show_comments: "false"
 
 - Corporate Headshots: We provide polished and high-quality headshots for individuals and teams to enhance your professional image.
 
-- Product Photography
+- Product Photography: From e-commerce visuals to compelling advertising campaigns, we showcase your products with stunning imagery, making them stand out in the competitive market.
 
 # Videography services
 
